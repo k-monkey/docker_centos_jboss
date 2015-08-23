@@ -22,7 +22,7 @@
 
     <system-properties>
         <property name="org.jboss.as.logging.per-deployment" value="false"/>
-        <property name="javax.net.ssl.trustStore" value="/Users/m843810/EAP-6.4.0/standalone/configuration/keystore.keystore"/>
+        <property name="javax.net.ssl.trustStore" value="/usr/share/jboss-eap-6.4/standalone/configuration/keystore.keystore"/>
         <property name="javax.net.ssl.trustStorePassword" value="changeit"/>
         <property name="org.apache.coyote.http11.Http11Protocol.MAX_HEADER_SIZE" value="65536"/>
     </system-properties>
@@ -239,13 +239,13 @@
 
     <interfaces>
         <interface name="management">
-            <inet-address value="${jboss.bind.address.management:127.0.0.1}"/>
+            <any-address/>
         </interface>
         <interface name="public">
-            <inet-address value="${jboss.bind.address:localhost}"/>
+            <any-address/>
         </interface>
         <interface name="unsecure">
-            <inet-address value="${jboss.bind.address.unsecure:127.0.0.1}"/>
+            <any-address/>
         </interface>
     </interfaces>
 

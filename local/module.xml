@@ -99,9 +99,9 @@
                 <path name="sun/security/pkcs11"/>
                 <path name="sun/security/provider"/>
                 <path name="sun/text"/>
+                <path name="sun/rmi"/>
+                <path name="sun/rmi/server"/>
                 <path name="META-INF/services"/>
-		<path name="sun/rmi"/>
-		<path name="sun/rmi/server"/> 
             </paths>
             <exports>
                 <include-set>
